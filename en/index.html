@@ -164,7 +164,7 @@
 
 <!-- 如果配置对象中存在，themecolor  属性  且其   enable 属性和   mode 属性 都存在且为真    就添加配置中的属性  dark（深色）-->
 
-	<body ontouchstart="" class="body--light body--light">
+	<body ontouchstart="" class="body--light body--dark">
 
 
 		<!-- ThemeColor -->
@@ -205,7 +205,7 @@
     return b ? b.pop() : '';
   }
   // 页面的主题模式
-  let themeMode = 'light';
+  let themeMode = 'dark';
 
   //  判断存储的cookie和页面的主题模式
   if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
@@ -319,6 +319,17 @@
             <a href="/tags/">
               
               TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/myreactproject/">
+              
+              我的react项目
               
               
             </a>

@@ -152,7 +152,7 @@
   <link rel="canonical" href="http://owenWDN.github.io/myreactproject/">
   <title>
     
-      Myreactproject - 个人博客
+      My-React-Project - 个人博客
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -164,7 +164,7 @@
 
 <!-- 如果配置对象中存在，themecolor  属性  且其   enable 属性和   mode 属性 都存在且为真    就添加配置中的属性  dark（深色）-->
 
-	<body ontouchstart="" class="body--light body--dark">
+	<body ontouchstart="" class="body--light body--light">
 
 
 		<!-- ThemeColor -->
@@ -205,7 +205,7 @@
     return b ? b.pop() : '';
   }
   // 页面的主题模式
-  let themeMode = 'dark';
+  let themeMode = 'light';
 
   //  判断存储的cookie和页面的主题模式
   if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
@@ -316,9 +316,9 @@
           
           
           <li>
-            <a href="/tags/">
+            <a href="/myreactproject/">
               
-              标签
+              我的react项目
               
               
             </a>
@@ -327,9 +327,9 @@
           
           
           <li>
-            <a href="/myreactproject/">
+            <a href="/tags/">
               
-              我的react项目
+              标签
               
               
             </a>
@@ -421,21 +421,21 @@
       .body--light {
         /* intro-header */
         --intro-header-background-image-url-home: url('/img/header_img/archive_bg3.jpg');
-        --intro-header-background-image-url-post: url('img/hometown/hometownback1.jpg');
-        --intro-header-background-image-url-page: url('/img/hometown/hometownback1.jpg');
+        --intro-header-background-image-url-post: url('img/myreactproject/myreactproject1.jpg');
+        --intro-header-background-image-url-page: url('/img/myreactproject/myreactproject1.jpg');
       }
 
       .body--dark {
         --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg3.jpg');
-        --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/hometown/hometownback1.jpg');
-        --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/hometown/hometownback1.jpg');
+        --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/myreactproject/myreactproject1.jpg');
+        --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/myreactproject/myreactproject1.jpg');
       }
 
       header.intro-header {
         
           /*page*/
           background-image: var(--intro-header-background-image-url-page);
-          /* background-image: url('/img/hometown/hometownback1.jpg'); */
+          /* background-image: url('/img/myreactproject/myreactproject1.jpg'); */
           
       }
 
@@ -460,7 +460,7 @@
                   
                       <div class="site-heading">
                         <h1>
-                          Myreactproject
+                          My-React-Project
                         </h1>
                         <!--<hr class="small">-->
                         <span class="subheading">
@@ -523,18 +523,10 @@
                 post-container
             ">
 
-          <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="97c9ed186377f262621477e3cb86118eddc9f161d5e4fe802ae1108302c1f878">946503ba322b4b0dafd822ad384a69fc9ca4b79a965cf22e3819ba7c6f8a86acef9f1aee1b5c45d2d74c9cf4f0676dc3b8dbe49a4d5a8e012d25428ddd78dc70cc68a414d17e02a186a29b879502fcbc737714d6f2e7a4af122203e59a7769b8727dd9c0369b5e8550f4bc7e5ab3af4b348a02089430246cea33d903fa308aa285a16a778f295f80162f74c0353fb4fb04fa1e4ed7691364f1e096483202c0f0b23054804d91b6b5d57a458ed87333054052fd3241fd19dc48b3dc640fe596784ee9d56ccbcc1fc8f48a4cdc531de372eae3c0116712527cc85480b580e40ac8882eef11964b138f7fc6cc5f4b90416a318f267809d4fee46564b607fe3fa998df3f68e954f6aac4fc6ebe723328747eee87f80932ea2055540c931935ff4262b88803498adf9c66e6e6c277714c654a3449e16538c8f016508a4287cfb5a6e893fbdb7edb90fec79404aa5c3b426a4008bc8f7fa8163a92ce6bd980de29a0a021ff57670ba578170335cac983369664e7ec21d4f756713d29164b09d3c2a7a99adeca5617191a8aa9a2922d15550ce115e748e612789d1cadd20b97af1a106a0b0fc8ed91388214cf3e7c36b225a97df12a80a40c90c7032df80920f42b5f46d87c8509e72f120bfc8bd9d1534e034d15289b8416a69e2b1967999aa4c76beb971a92ae2c5af2e6d72d0a43e9dbed34f000e2da40afc349ca4e89a2217a21a2c5dcc48637b211356af073b1c15dd22fb46080cbbf99bb441ff6002c2bc000bf699481a019868bc2c58c1e729d23ac14de5a8f171af2ecd81214c9f0405659d075f61915bb2226cc9a78a634e7a850916766a88f4a125ef0c2ba6defa3a76a215252721c30400bd92677a6bce4fbd499d6c922fcf5a5b4ef7209649f175c268afa83c582cd427d4284133af2d7e6bf4e9c36a6645eb587729bafa2803d492a891eb0f7f803ea149fc088cb3bbaef322c2010b1d4fffc23c97c286cb99fbacfb01b3fdda44f12235e0e8f6af486824064555a1390172ad0f44eb8b96ee6ade8f5b053c9f6bea7edda028b6f7c5e29ed1f32e4cf228560e44f45fff55b08d64ef7705ed553154fbefc9c1eee49ccc343247954be594a9b954bf76711375324a82f9eefc8f11ca7f1950797ee7cc4eae49482b13b5512e8e5a1df2a9e7f35b463a08e218bfd2e22874fe4dff93a509c88169aa22b9ae031b2babb765d37c9e3c07144c57bd935a1963c6164282fc2c2000d96d835466b57cb8efde7432413534f72d1ec45cb8b6391ee7f672105971b6ce62aae17e7ae52ce7fad54f2a169c4ebec288076ac11af7d98915e4c979be2db6551a91e6c47b07009fdc0795a2933d2d5c9ae8e9c00622984d02293baecfb6a6e8fc6626a0676cc682423b53c205f735a6bdaebbd3d1795e3ae3a8e02719154d5e6855e3dd3920545e27eef81b5affa16592486e455a7bbb1f3e554566e75a288fb7b1607a74e7aee7f11cca2dd88492fec20235ff85966d29c68b323c5fc7a3df97882ac60c5ad3a27952ec06af81b15a4e17d3058b3833d33579af54304020ee7875f27e4644c89e1153c56f5881912ecc18faae856284c7ff2f92e12723c5be2e693751e3c104f59c0709a126d4af3a3aed758d592d2601f9f66ef5a09f100a8ed378ad9eebb9578f784232bcda4995d2af7b0d8da734e672a56ae2b70701d0ba6dd666a70afb089d884af4e88d4ae5c9eacd04d2dce796972955086e5c299cc495014af155cbb5e45393cebc12ed0260611bdb4f73c71446259d02381071e8f575ff2c0f9b8b576c66ae5642f923ce6d31101781cdb0b0ebad674776b671feb541d89e3d94c3b142e8c7c73f988811cd535a11a95cf647ff219b93066ecca1348ab514e4e11638970bf6bc14b041043943d4d16292e76310edd3b7d4b18d4121babd722e8349b70f7cf163ee3e8bd530f8b2f0ce49581329d864194d7565f226ebd0dea9b72144e0a50c0967ec1cef02125c3097c92118285b5075e54e17a628203f96a646ef9ae17f0a4bf846afeb762797f5839e63e61eb9e1f0f7abf1551019068094b996bc0d543ddd95169c959db3e9f089213edd160cb8e7e7479ae0b59b979216da35ae821b51a1b477525dca45b39a9114eadb2c97199a2736bcc1706a102757fb959edd204d0a80cb052a353d066a94c315a5870148391f4a028c86f3e2469bf79d3bab2bd83dddc234b4c6d7413a0ce9e5c902411207b5242e6daec6092e544cc518131bf9f1f4e5f29b75fe0bdf94bdf0cf1a4dbdcff8efe815014093a07b524af8aeaf06c507635bfef8fbffbc99264300ee2a5a62f258ad1ab0b0c9d6769e8c29687a54af44de9178c12f162fa7148681bc2c34682e5c8638c3e28d08845603e04f878f3d27a53b099fab67e9b0ff080246a5bc7fd55daf22aeae40b035ff067ac160ce25256ffc2ff692365fd80d780a10a7246a03cbc84a71c4b95065791ebdde246597ae41e71886834bfbfe80b7829d06f102e82fa4d3bdfe421851f10b4e574be64f2df1e5a54fdb084ad3a99aa09473918d9a1ec1054b6de4b3a3642865577a135574b7b3313f47193ada5b4cc5fe9652558705ef9655c21119bb8b98b6587711752e13727b718f6a50bf87c62ee90585ea2c00fa9059d33ea85562cf93a5e0dbb11eae95919201a3d9399bb65925e74030685b9b9de695c518d8f942ce9d7d16cec0391c35428d7e2e69dc1c68011b6d50c4a8dcf72fa138a838c293c0913b1dccc4e5b0ff36c09ddae4a81789578ca87b192b7473eb76b0124e45fe84320c4527de2f1ae5d467d5af516bee555eeaf902cc586b9c7b80732f81869ff985fe91059b0beb741e54b8c8e73f893f20a76b369dac66c1d9f4ca89b539f14b58213b72baaa3f0</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">欢迎来到我的家乡，请输入阅读密码！！</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+          <!-- <script src="./homedescription.js"></script> -->
+<h2 id="我的-React-项目列表">我的 React 项目列表</h2>
+<p>1.<a href="../build/index.html">评论功能的完成</a></p>
+
 
             <!-- 如果开启评论功能 -->
             

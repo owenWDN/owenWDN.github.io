@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://owenwdn.github.io/build/easywayProject/index.html</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/build/rteactProject/index.html</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/build/rteactProject/manifest.json</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/build/rteactProject/asset-manifest.json</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/cn/hello-world/</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/404.html</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://owenwdn.github.io/myreactproject/index.html</loc>
     
     <lastmod>2023-07-21</lastmod>
@@ -19,34 +75,6 @@
     <loc>http://owenwdn.github.io/hometown/index.html</loc>
     
     <lastmod>2023-06-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-06-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-06-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/404.html</loc>
-    
-    <lastmod>2023-06-26</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/cn/hello-world/</loc>
-    
-    <lastmod>2023-06-25</lastmod>
     
   </url>
   
@@ -88,7 +116,7 @@
 
   <url>
     <loc>http://owenwdn.github.io/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -96,21 +124,21 @@
   
   <url>
     <loc>http://owenwdn.github.io/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2023-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/tags/knowledge/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://owenwdn.github.io/tags/js/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-12-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/tags/knowledge/</loc>
+    <lastmod>2023-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,21 +147,21 @@
   
   <url>
     <loc>http://owenwdn.github.io/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2023-08-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/categories/knowledge/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://owenwdn.github.io/categories/js/</loc>
-    <lastmod>2023-08-16</lastmod>
+    <lastmod>2023-12-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://owenwdn.github.io/categories/knowledge/</loc>
+    <lastmod>2023-12-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

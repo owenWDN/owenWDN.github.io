@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://owenwdn.github.io/build/reactProject/index.html</loc>
+    
+    <lastmod>2023-12-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://owenwdn.github.io/build/easywayProject/index.html</loc>
     
     <lastmod>2023-12-27</lastmod>
@@ -9,21 +16,14 @@
   </url>
   
   <url>
-    <loc>http://owenwdn.github.io/build/rteactProject/index.html</loc>
+    <loc>http://owenwdn.github.io/build/reactProject/manifest.json</loc>
     
     <lastmod>2023-12-27</lastmod>
     
   </url>
   
   <url>
-    <loc>http://owenwdn.github.io/build/rteactProject/manifest.json</loc>
-    
-    <lastmod>2023-12-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://owenwdn.github.io/build/rteactProject/asset-manifest.json</loc>
+    <loc>http://owenwdn.github.io/build/reactProject/asset-manifest.json</loc>
     
     <lastmod>2023-12-27</lastmod>
     

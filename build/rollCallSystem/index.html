@@ -269,6 +269,8 @@
 
           
           
+          
+          
           <li>
             <a href="/about/">
               
@@ -291,12 +293,32 @@
           
           
           
+          <li>
+            <a href="/categories/">
+              
+              分类
+              
+              
+            </a>
+          </li>
+          
           
           
           <li>
             <a href="/hometown/">
               
               家乡
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              标签
               
               
             </a>
@@ -314,26 +336,6 @@
           </li>
           
           
-          
-          <li>
-            <a href="/categories/">
-              
-              分类
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/tags/">
-              
-              标签
-              
-              
-            </a>
-          </li>
           
           
           
@@ -543,20 +545,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>点名系统</title>
+  <!-- <title>Document</title> -->
   <style>
     h1 {
       text-align: center;
       font-size: 42px;
-      line-height: 10px;
     }
 
     #colorBtn {
       width: 100px;
       height: 40px;
-      position: fixed;
-      top: 10px;
-      right: 10px;
       font-size: 12px;
       background-color: #f1f1f1;
       border-radius: 10px;
@@ -580,7 +578,7 @@
     #all {
       display: flex;
       justify-content: center;
-      margin-top: 50px;
+      margin-top: 10px;
     }
 
     #allStu {
@@ -588,14 +586,13 @@
       height: 100px;
       display: flex;
       flex-wrap: wrap;
-      margin-top: 78px;
       justify-content: space-between;
       align-content: space-between;
     }
 
     /* 默认设置为8人一排，可根据需要进行更改 */
     #stu {
-      width: 20%;
+      width: 24%;
       height: 46px;
       background-color: blueviolet;
       text-align: center;
@@ -636,32 +633,33 @@
   </style>
 </head>
 
-<body id="doc">
-  <button id="colorBtn">点击更换<br />背景颜色</button>
-  <h1>点名系统</h1>
-  <!-- <div id="jiangtai">讲&emsp;&emsp;台</div> -->
-  <div id="all">
-    <div id="pic1">
-      <img src="./img/1.jpg">
-      <img src="./img/2.jpg">
-      <img src="./img/3.jpg">
-      <img src="./img/4.jpg">
-      <img src="./img/5.jpg">
-      <img src="./img/6.jpg">
-      <img src="./img/12.jpg">
-      <img src="./img/8.jpg">
-      <img src="./img/9.jpg">
-      <img src="./img/10.jpg">
-      <img src="./img/11.jpg">
-      <img src="./img/7.jpg">
-    </div>
-    <div id="allStu">
-      <!-- 一个div代表一个学生 -->
-      <div id="stu"></div>
-      <div id="stu"></div>
-      <div id="stu"></div>
-      <div id="stu"></div>
-      <!-- <div id="stu"></div>
+<body>
+  <div id="roll">
+    <button id="colorBtn">点击更换<br />背景颜色</button>
+    <h1>点名系统</h1>
+    <!-- <div id="jiangtai">讲&emsp;&emsp;台</div> -->
+    <div id="all">
+      <div id="pic1">
+        <img src="./img/1.jpg">
+        <img src="./img/2.jpg">
+        <img src="./img/3.jpg">
+        <img src="./img/4.jpg">
+        <img src="./img/5.jpg">
+        <img src="./img/6.jpg">
+        <img src="./img/12.jpg">
+        <img src="./img/8.jpg">
+        <img src="./img/9.jpg">
+        <img src="./img/10.jpg">
+        <img src="./img/11.jpg">
+        <img src="./img/7.jpg">
+      </div>
+      <div id="allStu">
+        <!-- 一个div代表一个学生 -->
+        <div id="stu"></div>
+        <div id="stu"></div>
+        <div id="stu"></div>
+        <div id="stu"></div>
+        <!-- <div id="stu"></div>
       <div id="stu"></div>
       <div id="stu"></div>
       <div id="stu"></div>
@@ -729,112 +727,123 @@
       <div id="stu"></div>
       <div id="stu"></div>
       <div id="stu"></div> -->
+      </div>
+      <div id="pic2">
+        <img src="./img/1.jpg">
+        <img src="./img/2.jpg">
+        <img src="./img/3.jpg">
+        <img src="./img/4.jpg">
+        <img src="./img/5.jpg">
+        <img src="./img/6.jpg">
+        <img src="./img/12.jpg">
+        <img src="./img/8.jpg">
+        <img src="./img/9.jpg">
+        <img src="./img/10.jpg">
+        <img src="./img/11.jpg">
+        <img src="./img/7.jpg">
+      </div>
     </div>
-    <div id="pic2">
-      <img src="img/1.jpg"><img src="img/2.jpg"><img src="img/3.jpg"><img src="img/4.jpg"><img src="img/5.jpg">
-      <img src="img/6.jpg"><img src="img/12.jpg"><img src="img/8.jpg"><img src="img/9.jpg"><img src="img/10.jpg">
-      <img src="img/11.jpg"><img src="img/7.jpg">
-    </div>
+    <button id="btn">翻 牌</button>
   </div>
-  <button id="btn">翻 牌</button>
-  <script>
-    var i, j, k;
-    var count = 0;
-    var num = 0;
-    var shu = 0;
-    var timer;
-    var isRunning = false;
-    var newarr = [];
-    // var arr = ['韩非凡', '尹阿浩', '李灏一', '王梦齐', '李晓雨', '乔雨新', '晏宇翔', '王文博', '张浩宇', '闫越', '郑乐乐', '杨松', '陈基地', '肖硕', '梁康平', '杜子沫', '窦文鑫', '邢梦娟', '李欣雨', '卢佳宁', '陈奕霏', '韩甜', '徐珍珍', '刘水灵', '邢冰雨', '李晨晨', '张家合', '于锐', '陈家奇', '李世豪', '郭昱翡', '孙露露', '王子文', '单云豪', '崔卿晨', '刘翔', '孙晓宇', '王雨豪', '赵婉玉', '李晗', '张明涛', '樊永乐', '赵瑞情', '王梦雅', '牛雨萌', '李林豫', '吴炎昊', '李嘉诚', '陈蕊', '张子琪', '陈嘉乐', '宋甲申', '程成', '鹿蕴泽', '张欣欣', '崔晓佳', '王攀', '王凯锋', '马明翔', '王奥迪', '豆然', '李蒈悦', '周涛', '王龙坤', '焦文硕', '梁锦浩', '王水晴', '蒋国强', '马昊', '米家付', '褚文博', '王俊飞'];
-    // console.log(arr);
-    var arr = ['父亲大人', '母上大人', '妹妹', '哥哥']
-    var stuAll = $id("allStu")
-    var btn1 = $id("btn")
-    var pic11 = $id("pic1")
-    var pic22 = $id("pic2")
-    var bod = $id("doc")
-    var colorBtn1 = $id("colorBtn")
-    //传入元素id,返回指定id元素
-    function $id (id) {
-      return document.getElementById(id)
-    }
-    //生成一个随机颜色编码#000000-#ffffff
-    function yanSe () {
-      var result = "#"
-      for (var i = 0; i < 6; i++) {
-        result += rand(0, 15).toString(16)
-      }
-      return result;
-    }
-    //随机数生成函数，随机生成n-m之间的随机整数，包括n和m
-    function rand (n, m) {
-      return n + parseInt(Math.random() * (m - n + 1));
-    }
-    //在数组newarr中填入0-69这70个数
-    for (let a = 0; a < 4; a++) {
-      newarr.push(a)
-    }
 
-    //开始运行函数
-    function startRun () {
-      // console.log(stuAll.children.length);
-      //设置计时器，每0.01s运行一次内部函数
-      timer = setInterval(function () {
-        //随机生成 0 - 至数组长度-1（newarr.length-1）的随机数
-        i = rand(0, newarr.length - 1)
-        //将生成的随机数设置为数组索引，将newarr[i]设置为红色
-        stuAll.children[newarr[i]].style.background = "red"
-        //用于将随机到之后设置的红色变回之前的颜色
-        if (count != newarr[i]) {
-          stuAll.children[count].style.background = "blueviolet"
-        }
-        count = newarr[i];
-
-        //两侧图片随机
-        j = rand(0, 11)
-        pic11.children[j].style.zIndex = "2";
-        pic22.children[j].style.zIndex = "2";
-        if (num != j) {
-          pic11.children[num].style.zIndex = "0";
-          pic22.children[num].style.zIndex = "0";
-        }
-        num = j;
-      }, 10)
-    }
-
-    //停止运行函数
-    function pasue () {
-      clearInterval(timer)
-    }
-    //开始与停止按钮
-    btn1.onclick = function () {
-      //isRunning值预设为false,用于判断当前是否正在随机
-      if (!isRunning) {
-        btn1.innerHTML = "停 止";
-        isRunning = true;
-        startRun();
-      } else {
-        btn1.innerHTML = "开 始";
-        isRunning = false;
-        if (newarr.length > 0 && i >= 0 && i < newarr.length) {
-          stuAll.children[newarr[i]].innerHTML = arr[newarr[i]]
-          //通过随机到的数从arr数组中获取对应的姓名
-          pasue();
-          newarr.splice(i, 1)//将随机过的数从原数组中删除
-          // console.log(newarr);
-        }
-        if (!newarr || newarr.length === 0) {
-          btn1.disabled = true
-        }
-      }
-    }
-
-    //背景颜色切换按钮
-    colorBtn1.onclick = function () {
-      bod.style.backgroundColor = yanSe();
-    }
-  </script>
 </body>
+<script>
+  var i, j, k;
+  var count = 0;
+  var num = 0;
+  var shu = 0;
+  var timer;
+  var isRunning = false;
+  var newarr = [];
+  // var arr = ['韩非凡', '尹阿浩', '李灏一', '王梦齐', '李晓雨', '乔雨新', '晏宇翔', '王文博', '张浩宇', '闫越', '郑乐乐', '杨松', '陈基地', '肖硕', '梁康平', '杜子沫', '窦文鑫', '邢梦娟', '李欣雨', '卢佳宁', '陈奕霏', '韩甜', '徐珍珍', '刘水灵', '邢冰雨', '李晨晨', '张家合', '于锐', '陈家奇', '李世豪', '郭昱翡', '孙露露', '王子文', '单云豪', '崔卿晨', '刘翔', '孙晓宇', '王雨豪', '赵婉玉', '李晗', '张明涛', '樊永乐', '赵瑞情', '王梦雅', '牛雨萌', '李林豫', '吴炎昊', '李嘉诚', '陈蕊', '张子琪', '陈嘉乐', '宋甲申', '程成', '鹿蕴泽', '张欣欣', '崔晓佳', '王攀', '王凯锋', '马明翔', '王奥迪', '豆然', '李蒈悦', '周涛', '王龙坤', '焦文硕', '梁锦浩', '王水晴', '蒋国强', '马昊', '米家付', '褚文博', '王俊飞'];
+  // console.log(arr);
+  var arr = ['父亲大人', '母上大人', '妹妹', '哥哥']
+  var stuAll = $id("allStu")
+  var btn1 = $id("btn")
+  var pic11 = $id("pic1")
+  var pic22 = $id("pic2")
+  var bod = $id("roll")
+  var colorBtn1 = $id("colorBtn")
+  //传入元素id,返回指定id元素
+  function $id (id) {
+    return document.getElementById(id)
+  }
+  //生成一个随机颜色编码#000000-#ffffff
+  function yanSe () {
+    var result = "#"
+    for (var i = 0; i < 6; i++) {
+      result += rand(0, 15).toString(16)
+    }
+    return result;
+  }
+  //随机数生成函数，随机生成n-m之间的随机整数，包括n和m
+  function rand (n, m) {
+    return n + parseInt(Math.random() * (m - n + 1));
+  }
+  //在数组newarr中填入0-69这70个数
+  for (let a = 0; a < 4; a++) {
+    newarr.push(a)
+  }
+
+  //开始运行函数
+  function startRun () {
+    // console.log(stuAll.children.length);
+    //设置计时器，每0.01s运行一次内部函数
+    timer = setInterval(function () {
+      //随机生成 0 - 至数组长度-1（newarr.length-1）的随机数
+      i = rand(0, newarr.length - 1)
+      //将生成的随机数设置为数组索引，将newarr[i]设置为红色
+      stuAll.children[newarr[i]].style.background = "red"
+      //用于将随机到之后设置的红色变回之前的颜色
+      if (count != newarr[i]) {
+        stuAll.children[count].style.background = "blueviolet"
+      }
+      count = newarr[i];
+
+      //两侧图片随机
+      j = rand(0, 11)
+      pic11.children[j].style.zIndex = "2";
+      pic22.children[j].style.zIndex = "2";
+      if (num != j) {
+        pic11.children[num].style.zIndex = "0";
+        pic22.children[num].style.zIndex = "0";
+      }
+      num = j;
+    }, 10)
+  }
+
+  //停止运行函数
+  function pasue () {
+    clearInterval(timer)
+  }
+  //开始与停止按钮
+  btn1.onclick = function () {
+    //isRunning值预设为false,用于判断当前是否正在随机
+    if (!isRunning) {
+      btn1.innerHTML = "停 止";
+      isRunning = true;
+      startRun();
+    } else {
+      btn1.innerHTML = "开 始";
+      isRunning = false;
+      if (newarr.length > 0 && i >= 0 && i < newarr.length) {
+        stuAll.children[newarr[i]].innerHTML = arr[newarr[i]]
+        //通过随机到的数从arr数组中获取对应的姓名
+        pasue();
+        newarr.splice(i, 1)//将随机过的数从原数组中删除
+        // console.log(newarr);
+      }
+      if (!newarr || newarr.length === 0) {
+        btn1.disabled = true
+      }
+    }
+  }
+
+  //背景颜色切换按钮
+  colorBtn1.onclick = function () {
+    bod.style.backgroundColor = yanSe();
+  }
+</script>
 
 </html>
 
@@ -1571,20 +1580,5 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 
 
 		
-	<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</body>
+	</body>
 </html>

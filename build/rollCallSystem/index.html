@@ -149,7 +149,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://owenWDN.github.io/">
+  <link rel="canonical" href="http://owenWDN.github.io/build/rollCallSystem/">
   <title>
     
       个人博客
@@ -368,7 +368,7 @@
     <span>
       简体中文
     </span>
-    <select id="lang-select" data-canonical="index.html">
+    <select id="lang-select" data-canonical="build/rollCallSystem/index.html">
       
       
       <option value="cn"  selected >
@@ -447,9 +447,9 @@
 
       header.intro-header {
         
-          /*config*/
-          background-image: var(--intro-header-background-image-url-home);
-          /* background-image: url('/img/header_img/archive_bg3.jpg'); */
+          /*page*/
+          background-image: var(--intro-header-background-image-url-page);
+          /* background-image: url('/img/header_img/archive_bg2.jpg'); */
           
       }
 
@@ -537,214 +537,313 @@
                 post-container
             ">
 
-          <!-- Main Content -->
+          <!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>点名系统</title>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      line-height: 10px;
+    }
 
-  
-    <div class="post-preview">
-      
-        <!-- top start (article top hot config) -->
-        
-          <div class="top">
-            <div class="iconfont icon-hot animated infinite tada"></div>
-          </div>
-          
-            <!-- top end -->
-            
+    #colorBtn {
+      width: 100px;
+      height: 40px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px 0;
+    }
 
-              <a href="/cn/complateAnExamination/">
-                <h2 class="post-title">
-                  2022成考专升本政治练习题
-                </h2>
-                <h3 class="post-subtitle">
-                  每一次努力都是为了离梦想更近一步，不管进展如何，都要坚持走下去。
-                </h3>
-                <div class="post-content-preview">
-                  
+    #jiangtai {
+      width: 240px;
+      height: 36px;
+      background-color: pink;
+      line-height: 36px;
+      margin: 5px auto;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 5px;
+    }
 
-成功需要付出代价，而努力就是为了那个值得的目标。
+    #all {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
 
-试卷题型及分值：单选题 1-40 小题，每小题 2 分， 共 80 分
-辨析题 41-42 小题，每小题 10 分，共 20 分
-简答题 43-45 小题，每小题 10 分，共 30 分
-论述题 46 小题，共 20 分
+    #allStu {
+      width: 880px;
+      height: 450px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+    }
 
-Github 仓库地址：https://github.com/owenWDN/owenWDN.github.io.......
-                </div>
-              </a>
-              
-                <p class="post-meta" style="margin: 10px 0;">
-                  由 owen-wang 于
-                    2023-07-17 发布
-                </p>
-                <div class="tags">
-                  
-                    <a href="/tags/#knowledge" title="knowledge">
-                      knowledge
-                    </a>
-                    
-                </div>
-                
+    /* 默认设置为8人一排，可根据需要进行更改 */
+    #stu {
+      width: 11.2%;
+      height: 46px;
+      background-color: blueviolet;
+      text-align: center;
+      line-height: 46px;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+    }
 
+    #btn {
+      margin: 10px auto;
+      display: block;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      background-color: #f1f1f1;
+      font-size: 20px;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px 0;
+    }
+
+    #pic1,
+    #pic2 {
+      width: 120px;
+      height: 120px;
+      background-color: pink;
+      position: relative;
+      margin: 50px;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body id="doc">
+  <button id="colorBtn">点击更换<br />背景颜色</button>
+  <h1>点名系统</h1>
+  <!-- <div id="jiangtai">讲&emsp;&emsp;台</div> -->
+  <div id="all">
+    <div id="pic1">
+      <img src="./img/1.jpg">
+      <img src="./img/2.jpg">
+      <img src="./img/3.jpg">
+      <img src="./img/4.jpg">
+      <img src="./img/5.jpg">
+      <img src="./img/6.jpg">
+      <img src="./img/12.jpg">
+      <img src="./img/8.jpg">
+      <img src="./img/9.jpg">
+      <img src="./img/10.jpg">
+      <img src="./img/11.jpg">
+      <img src="./img/7.jpg">
     </div>
-    <hr>
-    
-    <div class="post-preview">
-      
-        <!-- top start (article top hot config) -->
-        
-            <!-- top end -->
-            
-
-              <a href="/cn/hello-world/">
-                <h2 class="post-title">
-                  你好，陌生人
-                </h2>
-                <h3 class="post-subtitle">
-                  
-                </h3>
-                <div class="post-content-preview">
-                  Welcome to Mybolg! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-......
-                </div>
-              </a>
-              
-                <p class="post-meta" style="margin: 10px 0;">
-                  由 owen-wang 于
-                    2023-12-26 发布
-                </p>
-                <div class="tags">
-                  
-                </div>
-                
-
+    <div id="allStu">
+      <!-- 一个div代表一个学生 -->
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <!-- <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div>
+      <div id="stu"></div> -->
     </div>
-    <hr>
-    
-    <div class="post-preview">
-      
-        <!-- top start (article top hot config) -->
-        
-            <!-- top end -->
-            
-
-              <a href="/cn/jsknowledge/">
-                <h2 class="post-title">
-                  js知识点
-                </h2>
-                <h3 class="post-subtitle">
-                  js真的6
-                </h3>
-                <div class="post-content-preview">
-                  
-
-移植 Hux Blog 的主题，感谢 Huxpro 设计了如此完美的主题。
-由 Vincent 创建的 LiveMyLife 的主题修改来源 YenYuHsuan，参考主题 dusign、Utone，感谢 dusign、Utone。
-
-Github 仓库地址：https://github.com/owenWDN/owenWDN.github.io.gitGitee 仓库地址：https:......
-                </div>
-              </a>
-              
-                <p class="post-meta" style="margin: 10px 0;">
-                  由 owen-wang 于
-                    2022-10-18 发布
-                </p>
-                <div class="tags">
-                  
-                    <a href="/tags/#js" title="js">
-                      js
-                    </a>
-                    
-                </div>
-                
-
+    <div id="pic2">
+      <img src="img/1.jpg"><img src="img/2.jpg"><img src="img/3.jpg"><img src="img/4.jpg"><img src="img/5.jpg">
+      <img src="img/6.jpg"><img src="img/12.jpg"><img src="img/8.jpg"><img src="img/9.jpg"><img src="img/10.jpg">
+      <img src="img/11.jpg"><img src="img/7.jpg">
     </div>
-    <hr>
-    
-    <div class="post-preview">
-      
-        <!-- top start (article top hot config) -->
-        
-            <!-- top end -->
-            
+  </div>
+  <button id="btn">翻 牌</button>
+  <script>
+    var i, j, k;
+    var count = 0;
+    var num = 0;
+    var shu = 0;
+    var timer;
+    var isRunning = false;
+    var newarr = [];
+    // var arr = ['韩非凡', '尹阿浩', '李灏一', '王梦齐', '李晓雨', '乔雨新', '晏宇翔', '王文博', '张浩宇', '闫越', '郑乐乐', '杨松', '陈基地', '肖硕', '梁康平', '杜子沫', '窦文鑫', '邢梦娟', '李欣雨', '卢佳宁', '陈奕霏', '韩甜', '徐珍珍', '刘水灵', '邢冰雨', '李晨晨', '张家合', '于锐', '陈家奇', '李世豪', '郭昱翡', '孙露露', '王子文', '单云豪', '崔卿晨', '刘翔', '孙晓宇', '王雨豪', '赵婉玉', '李晗', '张明涛', '樊永乐', '赵瑞情', '王梦雅', '牛雨萌', '李林豫', '吴炎昊', '李嘉诚', '陈蕊', '张子琪', '陈嘉乐', '宋甲申', '程成', '鹿蕴泽', '张欣欣', '崔晓佳', '王攀', '王凯锋', '马明翔', '王奥迪', '豆然', '李蒈悦', '周涛', '王龙坤', '焦文硕', '梁锦浩', '王水晴', '蒋国强', '马昊', '米家付', '褚文博', '王俊飞'];
+    // console.log(arr);
+    var arr = ['父亲大人', '母上大人', '妹妹', '哥哥']
+    var stuAll = $id("allStu")
+    var btn1 = $id("btn")
+    var pic11 = $id("pic1")
+    var pic22 = $id("pic2")
+    var bod = $id("doc")
+    var colorBtn1 = $id("colorBtn")
+    //传入元素id,返回指定id元素
+    function $id (id) {
+      return document.getElementById(id)
+    }
+    //生成一个随机颜色编码#000000-#ffffff
+    function yanSe () {
+      var result = "#"
+      for (var i = 0; i < 6; i++) {
+        result += rand(0, 15).toString(16)
+      }
+      return result;
+    }
+    //随机数生成函数，随机生成n-m之间的随机整数，包括n和m
+    function rand (n, m) {
+      return n + parseInt(Math.random() * (m - n + 1));
+    }
+    //在数组newarr中填入0-69这70个数
+    for (let a = 0; a < 4; a++) {
+      newarr.push(a)
+    }
 
-              <a href="/cn/Hexo-Theme-LiveMyLife/">
-                <h2 class="post-title">
-                  中文博客
-                </h2>
-                <h3 class="post-subtitle">
-                  A succinct hexo theme...
-                </h3>
-                <div class="post-content-preview">
-                  
-移植 Hux Blog 的主题，感谢 Huxpro 设计了如此完美的主题。
-由 Vincent 创建的 LiveMyLife 的主题修改来源 YenYuHsuan，参考主题 dusign、Utone，感谢 dusign、Utone。
+    //开始运行函数
+    function startRun () {
+      // console.log(stuAll.children.length);
+      //设置计时器，每0.01s运行一次内部函数
+      timer = setInterval(function () {
+        //随机生成 0 - 至数组长度-1（newarr.length-1）的随机数
+        i = rand(0, newarr.length - 1)
+        //将生成的随机数设置为数组索引，将newarr[i]设置为红色
+        stuAll.children[newarr[i]].style.background = "red"
+        //用于将随机到之后设置的红色变回之前的颜色
+        if (count != newarr[i]) {
+          stuAll.children[count].style.background = "blueviolet"
+        }
+        count = newarr[i];
 
-仓库Github 仓库地址：https://github.com/V-Vincen/hexo-theme-livemylifeGitee 仓库地址：http......
-                </div>
-              </a>
-              
-                <p class="post-meta" style="margin: 10px 0;">
-                  由 owen-wang 于
-                    2020-04-17 发布
-                </p>
-                <div class="tags">
-                  
-                    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife">
-                      Hexo-Theme-LiveMyLife
-                    </a>
-                    
-                </div>
-                
+        //两侧图片随机
+        j = rand(0, 11)
+        pic11.children[j].style.zIndex = "2";
+        pic22.children[j].style.zIndex = "2";
+        if (num != j) {
+          pic11.children[num].style.zIndex = "0";
+          pic22.children[num].style.zIndex = "0";
+        }
+        num = j;
+      }, 10)
+    }
 
-    </div>
-    <hr>
-    
-    <div class="post-preview">
-      
-        <!-- top start (article top hot config) -->
-        
-            <!-- top end -->
-            
+    //停止运行函数
+    function pasue () {
+      clearInterval(timer)
+    }
+    //开始与停止按钮
+    btn1.onclick = function () {
+      //isRunning值预设为false,用于判断当前是否正在随机
+      if (!isRunning) {
+        btn1.innerHTML = "停 止";
+        isRunning = true;
+        startRun();
+      } else {
+        btn1.innerHTML = "开 始";
+        isRunning = false;
+        if (newarr.length > 0 && i >= 0 && i < newarr.length) {
+          stuAll.children[newarr[i]].innerHTML = arr[newarr[i]]
+          //通过随机到的数从arr数组中获取对应的姓名
+          pasue();
+          newarr.splice(i, 1)//将随机过的数从原数组中删除
+          // console.log(newarr);
+        }
+        if (!newarr || newarr.length === 0) {
+          btn1.disabled = true
+        }
+      }
+    }
 
-              <a href="/en/Hexo-Theme-LiveMyLife/">
-                <h2 class="post-title">
-                  第一篇测试博客
-                </h2>
-                <h3 class="post-subtitle">
-                  A succinct hexo theme...
-                </h3>
-                <div class="post-content-preview">
-                  
-Ported Theme of Hux Blog, Thank Huxpro for designing such a flawless theme.
-This LiveMyLife theme created by Vincent modified from the original Porter YenYuHsuan , refer to the Themes of dusign、Ut......
-                </div>
-              </a>
-              
-                <p class="post-meta" style="margin: 10px 0;">
-                  由 owen-wang 于
-                    2020-04-17 发布
-                </p>
-                <div class="tags">
-                  
-                    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife">
-                      Hexo-Theme-LiveMyLife
-                    </a>
-                    
-                </div>
-                
+    //背景颜色切换按钮
+    colorBtn1.onclick = function () {
+      bod.style.backgroundColor = yanSe();
+    }
+  </script>
+</body>
 
-    </div>
-    <hr>
-    
-
-      <!-- Pager -->
-      <ul class="pager">
-        
-            
-      </ul>
+</html>
 
             <!-- 如果开启评论功能 -->
+            
+              <hr>
+
+              
+
+                  
             
         </div>
 
@@ -878,23 +977,23 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
 <div class="widget">
   <ul>
     
-    <a href="cn/hello-world/">
+    <a href="../../cn/hello-world/">
       <li>你好，陌生人</li>
     </a>
     
-    <a href="cn/complateAnExamination/">
+    <a href="../../cn/complateAnExamination/">
       <li>2022成考专升本政治练习题</li>
     </a>
     
-    <a href="cn/jsknowledge/">
+    <a href="../../cn/jsknowledge/">
       <li>js知识点</li>
     </a>
     
-    <a href="cn/Hexo-Theme-LiveMyLife/">
+    <a href="../../cn/Hexo-Theme-LiveMyLife/">
       <li>中文博客</li>
     </a>
     
-    <a href="en/Hexo-Theme-LiveMyLife/">
+    <a href="../../en/Hexo-Theme-LiveMyLife/">
       <li>第一篇测试博客</li>
     </a>
     
@@ -926,7 +1025,7 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
 
 <h5><a href="/archives/">archives</a></h5>
 <div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2023/12/">December 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2023/07/">July 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
+  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">December 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/07/">July 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2020/04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
 </div>
 
 

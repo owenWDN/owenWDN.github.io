@@ -272,28 +272,6 @@
           
           
           <li>
-            <a href="/archive/">
-              
-              归档
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/categories/">
-              
-              分类
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/about/">
               
               关于
@@ -305,9 +283,9 @@
           
           
           <li>
-            <a href="/myreactproject/">
+            <a href="/archive/">
               
-              我的项目
+              归档
               
               
             </a>
@@ -319,6 +297,17 @@
             <a href="/hometown/">
               
               家乡
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              分类
               
               
             </a>
@@ -340,6 +329,17 @@
           
           
           
+          
+          
+          
+          <li>
+            <a href="/myreactproject/">
+              
+              我的项目
+              
+              
+            </a>
+          </li>
           
           
           
@@ -547,6 +547,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <title>Document</title> -->
   <style>
+    #roll {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
     h1 {
       text-align: center;
       font-size: 42px;
@@ -579,6 +584,7 @@
       display: flex;
       justify-content: center;
       margin-top: 10px;
+
     }
 
     #allStu {
@@ -592,7 +598,7 @@
 
     /* 默认设置为8人一排，可根据需要进行更改 */
     #stu {
-      width: 24%;
+      width: 41%;
       height: 46px;
       background-color: blueviolet;
       text-align: center;
@@ -601,6 +607,7 @@
       font-size: 14px;
       border-radius: 10px;
       white-space: normal;
+      margin: 5px 0;
     }
 
     #btn {
@@ -634,13 +641,13 @@
 
     #reset {
       display: flex;
-      padding-bottom: 20px;
+      margin-bottom: 50px;
     }
 
     #reset img {
       position: absolute;
+      top: 71%;
       left: 45%;
-      bottom: 5px;
       /* transform: translate(50%, 71%); */
       display: block;
       width: 30px;
@@ -655,7 +662,7 @@
 <body>
   <div id="roll">
     <button id="colorBtn">点击更换<br />背景颜色</button>
-    <h1>抽奖系统</h1>
+    <h1 id="title">抽奖系统</h1>
     <!-- <div id="jiangtai">讲&emsp;&emsp;台</div> -->
     <div id="all">
       <div id="pic1">
@@ -781,7 +788,7 @@
   var newarr = [];
   // var arr = ['韩非凡', '尹阿浩', '李灏一', '王梦齐', '李晓雨', '乔雨新', '晏宇翔', '王文博', '张浩宇', '闫越', '郑乐乐', '杨松', '陈基地', '肖硕', '梁康平', '杜子沫', '窦文鑫', '邢梦娟', '李欣雨', '卢佳宁', '陈奕霏', '韩甜', '徐珍珍', '刘水灵', '邢冰雨', '李晨晨', '张家合', '于锐', '陈家奇', '李世豪', '郭昱翡', '孙露露', '王子文', '单云豪', '崔卿晨', '刘翔', '孙晓宇', '王雨豪', '赵婉玉', '李晗', '张明涛', '樊永乐', '赵瑞情', '王梦雅', '牛雨萌', '李林豫', '吴炎昊', '李嘉诚', '陈蕊', '张子琪', '陈嘉乐', '宋甲申', '程成', '鹿蕴泽', '张欣欣', '崔晓佳', '王攀', '王凯锋', '马明翔', '王奥迪', '豆然', '李蒈悦', '周涛', '王龙坤', '焦文硕', '梁锦浩', '王水晴', '蒋国强', '马昊', '米家付', '褚文博', '王俊飞'];
   // console.log(arr);
-  var arr = ['王', '任', '薛', '周']
+  var arr = ['王德恩', '任韦达', '薛为任', '周俊']
   var stuAll = $id("allStu")
   var btn1 = $id("btn")
   var reset = $id("resetBtn")
@@ -789,6 +796,7 @@
   var pic22 = $id("pic2")
   var bod = $id("roll")
   var colorBtn1 = $id("colorBtn")
+  var title = $id("title")
   //传入元素id,返回指定id元素
   function $id (id) {
     return document.getElementById(id)
@@ -907,6 +915,7 @@
   //背景颜色切换按钮
   colorBtn1.onclick = function () {
     bod.style.backgroundColor = yanSe();
+    title.style.color = yanSe();
   }
 </script>
 
